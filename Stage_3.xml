@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<alien>
+  <collection name="Stage_3">
+    <info command="[/alice/cern.ch/user/j/jvora/v0/output/]: find -z -x Stage_3 /alice/cern.ch/user/j/jvora//v0/output/000 Stage_2/*root_archive.zip" creator="admin" date="Sun Jul 24 20:15:18 CEST 2016" timestamp="1469384118" />
+  </collection>
+</alien>
+
