@@ -1,12 +1,12 @@
 import FWCore.ParameterSet.Config as cms
 
-#externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-#    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/madgraph/V5_2.6.1/QCD_ZA_FXFX/ZATo2LA01j_5f_NLO_FXFX_slc6_amd64_gcc481_CMSSW_7_1_30_tarball.tar.xz'),
-#	nEvents = cms.untracked.uint32(5000),
-#    numberOfParameters = cms.uint32(1),
-#    outputFile = cms.string('cmsgrid_final.lhe'),
-#    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
-#)
+externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/madgraph/V5_2.6.0/ZGToLLG_01J_5f_lowMLL_lowGPt_TuneCP5_13TeV-amcatnloFXFX-pythia8/ZG_NLO_201718_slc6_amd64_gcc630_CMSSW_9_3_8_tarball.tar.xz'),
+	nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
 
 
 from Configuration.Generator.Pythia8CommonSettings_cfi import *
